@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    <a href="/" class="back-btn">← Back to Home</a>
+</div>
+
+<!-- Register Card -->
+<div class="register-card">
+    <h2>Register </h2>
+    <p class="sub-text">
+        Enroll students by capturing their face for secure attendance
+    </p>
+
+    <form method="POST">
+        <div class="input-group">
+            <label>Student ID</label>
+            <input type="text" name="id" placeholder="" required>
+        </div>
+
+        <div class="input-group">
+            <label>Student Name</label>
+            <input type="text" name="name" placeholder="" required>
+        </div>
+
+        <button type="submit" class="primary-btn">
+             Capture Face & Register
+        </button>
+    </form>
+</div>
+
+</body>
+</html>
